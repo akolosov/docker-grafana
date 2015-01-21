@@ -1,5 +1,4 @@
-FROM tutum/nginx
-MAINTAINER Feng Honglin <hfeng@tutum.co>
+FROM akolosov/nginx
 
 ENV GRAFANA_VERSION 1.9.1
 
