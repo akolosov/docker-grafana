@@ -29,11 +29,12 @@ sed -i -e "s/<--PROTO-->/${INFLUXDB_PROTO}/g" \
 touch /.influx_db_configured
 
 echo "=> InfluxDB has been configured as follows:"
-echo "   InfluxDB ADDRESS:  ${INFLUXDB_HOST}"
-echo "   InfluxDB PORT:     ${INFLUXDB_PORT}"
-echo "   InfluxDB DB NAME:  ${INFLUXDB_NAME}"
-echo "   InfluxDB USERNAME: ${INFLUXDB_USER}"
-echo "   InfluxDB PASSWORD: ${INFLUXDB_PASS}"
+echo "   InfluxDB ADDRESS:   ${INFLUXDB_HOST}"
+echo "   InfluxDB PORT:      ${INFLUXDB_PORT}"
+echo "   InfluxDB DB NAME:   ${INFLUXDB_NAME}"
+echo "   InfluxDB USERNAME:  ${INFLUXDB_USER}"
+echo "   InfluxDB PASSWORD:  ${INFLUXDB_PASS}"
+echo "   InfluxDB GRAFANADB: ${INFLUXDB_IS_GRAFANADB}"
 echo "   ** Please check your environment variables if you find something is misconfigured. **"
 echo "=> Done!"
 
