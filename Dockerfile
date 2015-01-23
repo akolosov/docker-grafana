@@ -26,7 +26,7 @@ ENV INFLUXDB_PORT 8086
 ENV INFLUXDB_NAME **ChangeMe**
 ENV INFLUXDB_USER root
 ENV INFLUXDB_PASS root
-ENV INFLUXDB_IS_GRAFANADB false
+ENV INFLUXDB_IS_GRAFANADB true
 
 ADD run.sh /run.sh
 ADD set_influx_db.sh /set_influx_db.sh
