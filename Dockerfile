@@ -2,7 +2,7 @@ FROM akolosov/nginx
 
 ENV GRAFANA_VERSION 1.9.1
 
-RUN rm -rf /app
+RUN rm -f /app/*
 RUN rm -f /etc/nginx/sites-enabled/default
 RUN apt-get update
 RUN apt-get install -y wget pwgen apache2-utils
