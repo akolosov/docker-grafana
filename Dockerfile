@@ -2,7 +2,7 @@ FROM akolosov/nginx
 
 ENV GRAFANA_VERSION 1.9.1
 
-RUN rm -f /app/* && \
+RUN rm -rf /app && \
 		rm -f /etc/nginx/sites-enabled/default && \
 		cd / && \
 		apt-get update && \ 
