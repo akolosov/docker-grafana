@@ -2,14 +2,13 @@ FROM akolosov/nginx
 
 ENV GRAFANA_VERSION 1.9.1
 
+RUN rm -rf /app
+RUN rm -f /etc/nginx/sites-enabled/default
 RUN apt-get update
 RUN apt-get install -y wget pwgen apache2-utils
-RUN cd /
 RUN wget http://grafanarel.s3.amazonaws.com/grafana-${GRAFANA_VERSION}.tar.gz -O grafana.tar.gz
 RUN tar zxf grafana.tar.gz
 RUN rm grafana.tar.gz
-RUN rm -rf /app
-RUN rm -f /etc/nginx/sites-enabled/default
 RUN mv grafana-${GRAFANA_VERSION} app
 RUN apt-get autoremove -y wget
 RUN apt-get clean
