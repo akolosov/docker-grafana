@@ -13,6 +13,7 @@ function (Settings) {
     },
     timezoneOffset: null,
     grafana_index: "grafana-dash",
-    unsaved_changes_warning: true
+    unsaved_changes_warning: true,
+    playlist_timespan: "30s"
   });
 });
